@@ -12,12 +12,13 @@ services:
           name: my-project-db
           property: connectionString
 
-  # 2. Frontend
+  # 2. Frontend (Corrected configuration)
   - type: web
     name: my-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishPath: dist # or 'build' depending on your config
+    staticPublishPath: dist
 
 # 3. Database
 databases:
