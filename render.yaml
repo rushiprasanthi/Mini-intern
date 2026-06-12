@@ -1,0 +1,25 @@
+services:
+  # 1. Backend API
+  - type: web
+    name: my-backend-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: my-project-db
+          property: connectionString
+
+  # 2. Frontend
+  - type: static
+    name: my-frontend
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    publishPath: dist # or 'build' depending on your config
+
+# 3. Database
+databases:
+  - name: my-project-db
+    plan: free
