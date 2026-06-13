@@ -13,7 +13,7 @@ services:
           property: connectionString
 
   # 2. Frontend
-  - type: static
+  - type: web
     name: my-frontend
     rootDir: frontend
     buildCommand: npm install && npm run build
