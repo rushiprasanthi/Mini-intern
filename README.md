@@ -7,7 +7,11 @@
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
 ![Chart.js](https://img.shields.io/badge/Visualization-Chart.js-orange)
+## What Makes This Project Different?
 
+Unlike traditional dashboards that only display data, Smart Energy Advisor contains a custom environmental simulation engine.
+
+The platform evaluates user-defined energy portfolios using weighted sustainability models and rule-based recommendations to help users understand the trade-offs between cost, emissions, pollution, and long-term sustainability.
 Smart Energy Advisor is a full-stack educational sustainability platform that enables users to simulate different energy source combinations and instantly analyze their environmental impact through interactive dashboards, real-time analytics, and personalized recommendations.
 
 🔗 **Live Demo:** https://mini-intern.vercel.app/
